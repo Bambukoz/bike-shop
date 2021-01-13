@@ -1,0 +1,25 @@
+.nav {
+  width: 100%;
+  display: flex;
+}
+
+.nav__list {
+  @include list-reset;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nav__item {
+  @include style-reset;
+}
+
+.nav__item a {
+  color: $color-white-07;
+  font-weight: 300;
+  font-size: 1.12vw;
+  line-height: 200%;
+  text-align: center;
+  letter-spacing: -0.005em;
+}

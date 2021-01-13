@@ -40,7 +40,7 @@
     "deploy": "gulp deploy"
   },
   "browserslist": [
-    "last 4 versions",
+    "last 2 versions",
     "IE 11",
     "Firefox ESR"
   ],

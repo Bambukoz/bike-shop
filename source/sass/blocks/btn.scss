@@ -33,12 +33,22 @@
     display: block;
     width: 50px;
     height: 50px;
-    background-image: url("../img/svg/btn-menu-open.svg");
     background-position: center;
     background-repeat: no-repeat;
   }
 
   @include mobile {
     right: -17px;
+  }
+
+  &--open {
+    background-image: url("../img/svg/btn-menu-open.svg");
+  }
+
+  &--close {
+    background-image: url("../img/svg/btn-menu-close.svg");
+    background-color: transparent;
+    top: 0;
+    right: 0;
   }
 }

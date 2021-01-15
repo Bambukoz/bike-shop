@@ -1,12 +1,8 @@
 .about-us {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 151px 137px 148px;
+  padding: 151px 137px 151px;
 
   @include tablet {
-    padding: 34px 115px 38px;
+    padding: 34px 115px 25px;
   }
 
   @include mobile {

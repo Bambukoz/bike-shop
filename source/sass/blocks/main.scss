@@ -10,7 +10,7 @@
   }
 }
 
-.main__container {
+.main__wrapper {
   display: flex;
   padding-left: 280px;
   padding-right: 280px;
@@ -20,5 +20,31 @@
     flex-direction: column;
     padding: 0;
     margin-bottom: 0;
+  }
+}
+
+.main__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__container h2 {
+  font-weight: 600;
+  font-size: 2.1vw;
+  line-height: 100%;
+  color: $color-text-black;
+  letter-spacing: -0.005em;
+  margin-top: 0;
+
+  @include tablet {
+    font-size: 3.12vw;
+    line-height: 125%;
+  }
+
+  @include mobile {
+    font-size: 24px;
+    line-height: 41px;
   }
 }

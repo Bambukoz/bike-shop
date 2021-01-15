@@ -40,7 +40,7 @@
 </header>
 
 <main class="page__main main">
-    <div class="main__container">
+    <div class="main__wrapper">
         <section class="lead">
             <div class="lead__top">
                 <a class="logo" aria-label="Логотип Moon">
@@ -64,7 +64,7 @@
             <button class="btn btn__submit" type="submit">Подобрать велосипед мечты</button>
         </form>
     </div>
-    <section class="about-us" id="about">
+    <section class="main__container about-us" id="about">
         <h2>Несколько фактов о нас</h2>
         <ul class="about-us__list">
             <li class="about-us__item">
@@ -82,6 +82,50 @@
             <li class="about-us__item">
                 <span>04</span>
                 <p>Профессиональные консультации!</p>
+            </li>
+        </ul>
+    </section>
+    <section class="main__container bikes">
+        <h2>Виды велосипедов</h2>
+        <ul class="bikes__list">
+            <li class="bikes__item bikes__item--road">
+                <div class="bikes__img-wrapper bikes__img-wrapper--road">
+                    <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="img/jpg/andreas-haimerl-mobile@1x.webp, img/jpg/andreas-haimerl-mobile@2x.webp 2x">
+                        <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpg/andreas-haimerl-tablet@1x.webp, img/jpg/andreas-haimerl-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/jpg/andreas-haimerl-desktop@1x.webp, img/jpg/andreas-haimerl-desktop@2x.webp 2x">
+                        <source media="(max-width: 767px)" srcset="img/jpg/andreas-haimerl-mobile@1x.jpg, img/jpg/andreas-haimerl-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1023px)" srcset="img/jpg/andreas-haimerl-tablet@1x.jpg, img/jpg/andreas-haimerl-tablet@2x.jpg 2x">
+                        <img width="342" height="503" src="img/jpg/andreas-haimerl-desktop@1x.jpg" srcset="img/jpg/andreas-haimerl-desktop@2x.jpg 2x" alt="Дорожный велосипед с корзиной" loading="lazy">
+                    </picture>
+                </div>
+                <span>Дорожный велосипед</span>
+            </li>
+            <li class="bikes__item bikes__item--mountain">
+                <div class="bikes__img-wrapper bikes__img-wrapper--mountain">
+                    <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="img/jpg/eberhard-grossgasteiger-mobile@1x.webp, img/jpg/eberhard-grossgasteiger-mobile@2x.webp 2x">
+                        <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpg/eberhard-grossgasteiger-tablet@1x.webp, img/jpg/eberhard-grossgasteiger-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/jpg/eberhard-grossgasteiger-desktop@1x.webp, img/jpg/eberhard-grossgasteiger-desktop@2x.webp 2x">
+                        <source media="(max-width: 767px)" srcset="img/jpg/eberhard-grossgasteiger-mobile@1x.jpg, img/jpg/eberhard-grossgasteiger-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1023px)" srcset="img/jpg/eberhard-grossgasteiger-tablet@1x.jpg, img/jpg/eberhard-grossgasteiger-tablet@2x.jpg 2x">
+                        <img width="342" height="566" src="img/jpg/eberhard-grossgasteiger-desktop@1x.jpg" srcset="img/jpg/eberhard-grossgasteiger-desktop@2x.jpg 2x" alt="Горный велосипед" loading="lazy">
+                    </picture>
+                </div>
+                <span>Горный велосипед</span>
+            </li>
+            <li class="bikes__item bikes__item--child">
+                <div class="bikes__img-wrapper bikes__img-wrapper--child">
+                    <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="img/jpg/roger-goh-mobile@1x.webp, img/jpg/roger-goh-mobile@2x.webp 2x">
+                        <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpg/roger-goh-tablet@1x.webp, img/jpg/roger-goh-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/jpg/roger-goh-desktop@1x.webp, img/jpg/roger-goh-desktop@2x.webp 2x">
+                        <source media="(max-width: 767px)" srcset="img/jpg/roger-goh-mobile@1x.jpg, img/jpg/roger-goh-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1023px)" srcset="img/jpg/roger-goh-tablet@1x.jpg, img/jpg/roger-goh-tablet@2x.jpg 2x">
+                        <img width="342" height="513" src="img/jpg/roger-goh-desktop@1x.jpg" srcset="img/jpg/roger-goh-desktop@2x.jpg 2x" alt="Детский велосипед розового цвета" loading="lazy">
+                    </picture>
+                </div>
+                <span>Детский велосипед</span>
             </li>
         </ul>
     </section>

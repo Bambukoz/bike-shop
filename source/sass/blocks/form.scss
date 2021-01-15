@@ -65,6 +65,12 @@
   &::placeholder {
     color: $color-gray-05;
   }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $color-primary;
+  }
 }
 
 .form__label--bottom input {

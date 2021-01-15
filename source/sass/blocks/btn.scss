@@ -2,6 +2,15 @@
   @include btn-reset;
   display: block;
   background-color: $color-primary;
+
+  &:hover,
+  &:focus {
+    background-color: $color-primary-lighter;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .btn__submit {
@@ -50,6 +59,15 @@
     background-color: transparent;
     top: 0;
     right: 0;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+    }
+
+    &:focus {
+      opacity: 0.1;
+    }
   }
 }
 

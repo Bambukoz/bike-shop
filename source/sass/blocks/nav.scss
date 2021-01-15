@@ -68,4 +68,13 @@
     background-color: $color-white-smoke;
     padding: 17px 35px 15px 17px;
   }
+
+  &:hover,
+  &:focus {
+    color: $color-white-smoke;
+  }
+
+  &:active {
+    color: $color-primary;
+  }
 }

@@ -50,6 +50,15 @@
   @include mobile {
     font-size: 16px;
   }
+
+  &:hover,
+  &:focus {
+    color: $color-text-gray;
+  }
+
+  &:active {
+    color: $color-primary;
+  }
 }
 
 .footer__link {

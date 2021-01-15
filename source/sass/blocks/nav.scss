@@ -76,5 +76,10 @@
 
   &:active {
     color: $color-primary;
+
+    @include tablet {
+      background-color: transparent;
+      color: $color-text-gray;
+    }
   }
 }

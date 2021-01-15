@@ -1,0 +1,63 @@
+.video {
+  position: relative;
+  background: linear-gradient($background-color-black 78.4%, transparent 78.4%, transparent 100%);
+  padding: 121px 256px 97px;
+
+  @include tablet {
+    background: linear-gradient($background-color-black 76%, transparent 76%, transparent 100%);
+    padding: 70px 132px 45px;
+  }
+
+  @include mobile {
+    background: linear-gradient($background-color-black 81.1%, transparent 81.1%, transparent 100%);
+    padding: 84px 16px 40px;
+  }
+}
+
+.video h2 {
+  font-size: 2.08vw;
+  color: $color-white;
+  margin-right: 8px;
+  margin-bottom: 20px;
+
+  @include tablet {
+    font-size: 3.12vw;
+    margin-right: 0;
+  }
+
+  @include mobile {
+    font-size: 24px;
+    line-height: 30px;
+    margin-right: 8px;
+  }
+}
+
+.video p {
+  @include style-reset;
+  width: 35%;
+  font-weight: 300;
+  font-size: 1.12vw;
+  line-height: 175%;
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: $color-white-07;
+  margin-bottom: 56px;
+
+  @include tablet {
+    width: 84%;
+    font-size: 2.1vw;
+    margin-bottom: 41px;
+  }
+
+  @include mobile {
+    width: 100%;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 53px;
+  }
+}
+
+.video__img-wrapper {
+  position: relative;
+  line-height: 0;
+}

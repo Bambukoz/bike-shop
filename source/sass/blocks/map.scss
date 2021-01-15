@@ -21,18 +21,21 @@
 }
 
 .map h2 {
+  font-size: 1.97vw;
+  margin-top: 0;
   margin-right: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 
   @include tablet {
+    font-size: 2.95vw;
     margin-right: 0;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
   }
 
   @include mobile {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
 }
 
@@ -50,12 +53,13 @@
     width: 100%;
     font-size: 2.22vw;
     margin-right: 0;
-    margin-bottom: 19px;
+    margin-bottom: 20px;
   }
 
   @include mobile {
     width: 84%;
     font-size: 17px;
     line-height: 31px;
+    margin-bottom: 19px;
   }
 }

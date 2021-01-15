@@ -52,3 +52,33 @@
     right: 0;
   }
 }
+
+.btn__play {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top: 44%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-image: url("../img/svg/btn-video-play.svg");
+  background-size: 13px 18px;
+  background-position: 29px center;
+  background-repeat: no-repeat;
+
+  @include tablet {
+    top: 34%;
+    width: 91px;
+    height: 91px;
+    background-size: 18px 25px;
+    background-position-x: 40px;
+  }
+
+  @include mobile {
+    top: 30%;
+    width: 65px;
+    height: 65px;
+    background-size: 13px 18px;
+    background-position-x: 28px;
+  }
+}

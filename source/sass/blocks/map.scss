@@ -71,7 +71,7 @@
 .map__wrapper,
 .map img,
 .map iframe {
-  width: 66.4vw;
+  width: 66.5vw;
   height: 36.85vw;
 
   @include tablet {
@@ -83,6 +83,10 @@
     width: 100vw;
     height: 78.5vw;
   }
+}
+
+.map iframe {
+  border: none;
 }
 
 .map img {

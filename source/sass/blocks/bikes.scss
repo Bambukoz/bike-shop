@@ -113,62 +113,72 @@
   }
 }
 
-.bikes__img-wrapper--mountain::before {
-  content: "";
-  position: absolute;
-  top: -18px;
-  left: -19px;
-  display: block;
-  width: 47px;
-  height: 47px;
-  border: 8px solid $color-primary;
+.bikes__img-wrapper--mountain {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: -19px;
+    display: block;
+    width: 47px;
+    height: 47px;
+    border: 8px solid $color-primary;
 
-  @include tablet {
-    display: none;
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -24px;
+    right: -23px;
+    display: block;
+    width: 47px;
+    height: 47px;
+    border: 8px solid $color-primary;
+
+    @include tablet {
+      display: none;
+    }
   }
 }
 
-.bikes__img-wrapper--mountain::after {
-  content: "";
-  position: absolute;
-  bottom: -24px;
-  right: -23px;
-  display: block;
-  width: 47px;
-  height: 47px;
-  border: 8px solid $color-primary;
+.bikes__img-wrapper--child {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -33px;
+    right: -37px;
+    display: block;
+    width: 95px;
+    height: 95px;
+    border: 17px solid $color-primary;
+    border-radius: 50%;
 
-  @include tablet {
-    display: none;
-  }
-}
+    @include tablet {
+      top: -20px;
+      right: -25px;
+      width: 68px;
+      height: 68px;
+      border-width: 13px;
+    }
 
-.bikes__img-wrapper--child::before {
-  content: "";
-  position: absolute;
-  top: -33px;
-  right: -37px;
-  display: block;
-  width: 95px;
-  height: 95px;
-  border: 17px solid $color-primary;
-  border-radius: 50%;
-
-  @include tablet {
-    top: -20px;
-    right: -25px;
-    width: 68px;
-    height: 68px;
-    border-width: 13px;
-  }
-
-  @include mobile {
-    right: -15px;
+    @include mobile {
+      right: -15px;
+    }
   }
 }
 
 .bikes__item img {
+  width: 23.7vw;
   border-radius: 8px;
+
+  @include tablet {
+    width: 270px;
+    height: 300px;
+  }
 }
 
 .bikes__item span {
@@ -178,6 +188,7 @@
   font-size: 1.6vw;
   line-height: 155%;
   letter-spacing: -0.5px;
+  margin-bottom: auto;
 
   @include tablet {
     font-size: 3vw;

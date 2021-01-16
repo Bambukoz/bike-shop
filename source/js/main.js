@@ -8,7 +8,6 @@
     OPEN: 'header--open',
     NOJS: 'header--nojs'
   };
-
   header.classList.remove(headerClass.NOJS);
 
   var menuHandler = function (evt) {

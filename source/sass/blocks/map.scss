@@ -63,3 +63,31 @@
     margin-bottom: 19px;
   }
 }
+
+.map__wrapper {
+  position: relative;
+}
+
+.map__wrapper,
+.map img,
+.map iframe {
+  width: 66.4vw;
+  height: 36.85vw;
+
+  @include tablet {
+    width: 91vw;
+    height: 71.1vw;
+  }
+
+  @include mobile {
+    width: 100vw;
+    height: 78.5vw;
+  }
+}
+
+.map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

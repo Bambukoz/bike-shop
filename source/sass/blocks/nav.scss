@@ -72,6 +72,10 @@
   &:hover,
   &:focus {
     color: $color-white-smoke;
+
+    @include tablet {
+      color: $color-text-gray;
+    }
   }
 
   &:active {

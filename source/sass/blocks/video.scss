@@ -61,3 +61,11 @@
   position: relative;
   line-height: 0;
 }
+
+.video__img-wrapper img {
+  width: 65.4vw;
+
+  @include mobile {
+    width: 90vw;
+  }
+}

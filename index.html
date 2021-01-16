@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,10 +55,10 @@
         </section>
         <form class="form" action="https://echo.htmlacademy.ru" method="get">
             <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-            <label class="form__label" for="name">
+            <label class="form__label" for="name" aria-label="Введите ваше имя">
                 <input type="text" id="name" name="name" placeholder="Введите Ваше Имя" required="">
             </label>
-            <label class="form__label form__label--bottom" for="tel">
+            <label class="form__label form__label--bottom" for="tel" aria-label="Введите ваш номер телефона">
                 <input type="tel" id="tel" name="tel" placeholder="Введите Ваш номер телефона" pattern="[0-9]{11}" minlength="11" required="">
             </label>
             <button class="btn btn__submit" type="submit">Подобрать велосипед мечты</button>
@@ -160,7 +160,7 @@
         <h2>Как нас найти?</h2>
         <p>Мы находимся по адресу: Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д. 19</p>
         <div class="map__wrapper">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A776eb1736747ad3d99b22d5ed64310bc83527a5e6794404f97f2715c81a1e02f&amp;source=constructor" width="100%" height="530" frameborder="0"></iframe>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A776eb1736747ad3d99b22d5ed64310bc83527a5e6794404f97f2715c81a1e02f&amp;source=constructor" aria-label="Улица Большая Конюшенная, дом номер 19"></iframe>
             <picture>
                 <!-- 1x: 320px; 2x: 640px -->
                 <source media="(max-width: 767px)" type="image/webp" srcset="img/png/map-mobile@1x.webp, img/png/map-mobile@2x.webp 2x">
@@ -173,7 +173,7 @@
                 <!-- 1x: 698px; 2x: 1396px -->
                 <source media="(max-width: 1023px)" srcset="img/png/map-tablet@1x.png, img/png/map-tablet@2x.png 2x">
                 <!-- 1x: 957px; 2x: 1914px -->
-                <img width="957" height="530" src="img/png/map-desktop@1x.png" srcset="img/png/map-desktop@2x.png 2x" alt="улица Большая Конюшенная, дом 19" loading="lazy">
+                <img width="957" height="530" src="img/png/map-desktop@1x.png" srcset="img/png/map-desktop@2x.png 2x" alt="Улица Большая Конюшенная, дом номер 19" loading="lazy">
             </picture>
         </div>
     </section>

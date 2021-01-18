@@ -151,8 +151,8 @@
           bcr = false;
         }
         href = uses[i].getAttribute('href')
-                || uses[i].getAttributeNS(xlinkNS, 'href')
-                || uses[i].getAttribute('xlink:href');
+            || uses[i].getAttributeNS(xlinkNS, 'href')
+            || uses[i].getAttribute('xlink:href');
         if (href && href.split) {
           url = href.split('#');
         } else {
@@ -352,7 +352,7 @@
     /**
      * Shortcut property for https://w3c.github.io/webappsec/specs/mixedcontent/#restricts-mixed-content ( for easy overriding in tests )
      */
-            // baseStyle also used by getEmValue (i.e.: width: 1em is important)
+        // baseStyle also used by getEmValue (i.e.: width: 1em is important)
     var baseStyle = "position:absolute;left:0;visibility:hidden;display:block;padding:0;border:none;font-size:1em;width:1em;overflow:hidden;clip:rect(0px, 0px, 0px, 0px)";
     var fsCss = "font-size:100%!important;";
     var isVwDirty = true;
@@ -375,17 +375,17 @@
 
     // (Don't use \s, to avoid matching non-breaking space.)
     var regexLeadingSpaces = /^[ \t\n\r\u000c]+/,
-            regexLeadingCommasOrSpaces = /^[, \t\n\r\u000c]+/,
-            regexLeadingNotSpaces = /^[^ \t\n\r\u000c]+/,
-            regexTrailingCommas = /[,]+$/,
-            regexNonNegativeInteger = /^\d+$/,
+        regexLeadingCommasOrSpaces = /^[, \t\n\r\u000c]+/,
+        regexLeadingNotSpaces = /^[^ \t\n\r\u000c]+/,
+        regexTrailingCommas = /[,]+$/,
+        regexNonNegativeInteger = /^\d+$/,
 
-            // ( Positive or negative or unsigned integers or decimals, without or without exponents.
-            // Must include at least one digit.
-            // According to spec tests any decimal point must be followed by a digit.
-            // No leading plus sign is allowed.)
-            // https://html.spec.whatwg.org/multipage/infrastructure.html#valid-floating-point-number
-            regexFloatingPoint = /^-?(?:[0-9]+|[0-9]*\.[0-9]+)(?:[eE][+-]?[0-9]+)?$/;
+        // ( Positive or negative or unsigned integers or decimals, without or without exponents.
+        // Must include at least one digit.
+        // According to spec tests any decimal point must be followed by a digit.
+        // No leading plus sign is allowed.)
+        // https://html.spec.whatwg.org/multipage/infrastructure.html#valid-floating-point-number
+        regexFloatingPoint = /^-?(?:[0-9]+|[0-9]*\.[0-9]+)(?:[eE][+-]?[0-9]+)?$/;
 
     var on = function (obj, evt, fn, capture) {
       if (obj.addEventListener) {
@@ -415,10 +415,10 @@
     // http://jsperf.com/whitespace-character/5
     function isSpace(c) {
       return (c === "\u0020" || // space
-              c === "\u0009" || // horizontal tab
-              c === "\u000A" || // new line
-              c === "\u000C" || // form feed
-              c === "\u000D");  // carriage return
+          c === "\u0009" || // horizontal tab
+          c === "\u000A" || // new line
+          c === "\u000C" || // form feed
+          c === "\u000D");  // carriage return
     }
 
     /**
@@ -442,25 +442,25 @@
       var buildStr = memoize(function (css) {
 
         return "return " + replace((css || "").toLowerCase(),
-                // interpret `and`
-                /\band\b/g, "&&",
+            // interpret `and`
+            /\band\b/g, "&&",
 
-                // interpret `,`
-                /,/g, "||",
+            // interpret `,`
+            /,/g, "||",
 
-                // interpret `min-` as >=
-                /min-([a-z-\s]+):/g, "e.$1>=",
+            // interpret `min-` as >=
+            /min-([a-z-\s]+):/g, "e.$1>=",
 
-                // interpret `max-` as <=
-                /max-([a-z-\s]+):/g, "e.$1<=",
+            // interpret `max-` as <=
+            /max-([a-z-\s]+):/g, "e.$1<=",
 
-                //calc value
-                /calc([^)]+)/g, "($1)",
+            //calc value
+            /calc([^)]+)/g, "($1)",
 
-                // interpret css values
-                /(\d+[\.]*[\d]*)([a-z]+)/g, "($1 * e.$2)",
-                //make eval less evil
-                /^(?!(e.[a-z]|[0-9\.&=|><\+\-\*\(\)\/])).*/ig, ""
+            // interpret css values
+            /(\d+[\.]*[\d]*)([a-z]+)/g, "($1 * e.$2)",
+            //make eval less evil
+            /^(?!(e.[a-z]|[0-9\.&=|><\+\-\*\(\)\/])).*/ig, ""
         ) + ";";
       });
 
@@ -538,10 +538,10 @@
      * @type {Function}
      */
     warn = (window.console && console.warn) ?
-            function (message) {
-              console.warn(message);
-            } :
-            noop
+        function (message) {
+          console.warn(message);
+        } :
+        noop
     ;
 
     if (!(curSrcProp in image)) {
@@ -617,8 +617,8 @@
         }
       } else {
         meanDensity = (dprValue > 1) ?
-                Math.sqrt(lowerValue * higherValue) :
-                lowerValue;
+            Math.sqrt(lowerValue * higherValue) :
+            lowerValue;
       }
 
       return meanDensity > dprValue;
@@ -722,7 +722,7 @@
 
       function collectCharacters(regEx) {
         var chars,
-                match = regEx.exec(input.substring(pos));
+            match = regEx.exec(input.substring(pos));
         if (match) {
           chars = match[0];
           pos += chars.length;
@@ -731,18 +731,18 @@
       }
 
       var inputLength = input.length,
-              url,
-              descriptors,
-              currentDescriptor,
-              state,
-              c,
+          url,
+          descriptors,
+          currentDescriptor,
+          state,
+          c,
 
-              // 2. Let position be a pointer into input, initially pointing at the start
-              //    of the string.
-              pos = 0,
+          // 2. Let position be a pointer into input, initially pointing at the start
+          //    of the string.
+          pos = 0,
 
-              // 3. Let candidates be an initially empty source set.
-              candidates = [];
+          // 3. Let candidates be an initially empty source set.
+          candidates = [];
 
       /**
        * Adds descriptor properties to a candidate, pushes to the candidates array
@@ -756,12 +756,12 @@
         // 9. Descriptor parser: Let error be no.
         var pError = false,
 
-                // 10. Let width be absent.
-                // 11. Let density be absent.
-                // 12. Let future-compat-h be absent. (We're implementing it now as h)
-                w, d, h, i,
-                candidate = {},
-                desc, lastChar, value, intVal, floatVal;
+            // 10. Let width be absent.
+            // 11. Let density be absent.
+            // 12. Let future-compat-h be absent. (We're implementing it now as h)
+            w, d, h, i,
+            candidate = {},
+            desc, lastChar, value, intVal, floatVal;
 
         // 13. For each descriptor in descriptors, run the appropriate set of steps
         // from the following list:
@@ -1410,8 +1410,8 @@
       var body;
       if (!eminpx && (body = document.body)) {
         var div = document.createElement("div"),
-                originalHTMLCSS = docElem.style.cssText,
-                originalBodyCSS = body.style.cssText;
+            originalHTMLCSS = docElem.style.cssText,
+            originalBodyCSS = body.style.cssText;
 
         div.style.cssText = baseStyle;
 
@@ -1481,14 +1481,14 @@
         return;
       }
       var candidate,
-              i,
-              j,
-              length,
-              bestCandidate,
-              curSrc,
-              curCan,
-              candidateSrc,
-              abortCurSrc;
+          i,
+          j,
+          length,
+          bestCandidate,
+          curSrc,
+          curCan,
+          candidateSrc,
+          abortCurSrc;
 
       var imageData = img[pf.ns];
       var dpr = pf.DPR;
@@ -1530,8 +1530,8 @@
             // we have found the perfect candidate,
             // but let's improve this a little bit with some assumptions ;-)
             if (candidates[j] &&
-                    (abortCurSrc || curSrc !== pf.makeUrl(candidate.url)) &&
-                    chooseLowRes(candidates[j].res, candidate.res, dpr, candidates[j].cached)) {
+                (abortCurSrc || curSrc !== pf.makeUrl(candidate.url)) &&
+                chooseLowRes(candidates[j].res, candidate.res, dpr, candidates[j].cached)) {
 
               bestCandidate = candidates[j];
 
@@ -1825,4 +1825,89 @@
     }
 
   })(window, document);
+})();
+
+(function (){
+  window.addEventListener('DOMContentLoaded', function () {
+    var inputs = document.querySelectorAll('input[type="tel"]');
+    Array.prototype.forEach.call(inputs, function (input) {
+      new InputMask({
+        selector: input, // в качестве селектора может быть элемент, или, собственно css селектор('#input', '.input', 'input'). Если селектор - тег или класс - будет получен только первый элемент
+        layout: input.dataset.mask
+      })
+    })
+
+  })
+
+  function InputMask(options) {
+    this.el = this.getElement(options.selector);
+    if (!this.el) return console.log('Что-то не так с селектором');
+    this.layout = options.layout || '+_ (___) ___-__-__';
+    this.maskreg = this.getRegexp();
+
+    this.setListeners();
+  }
+
+  InputMask.prototype.getRegexp = function () {
+    var str = this.layout.replace(/_/g, '\\d');
+    str = str.replace(/\(/g, '\\(');
+    str = str.replace(/\)/g, '\\)');
+    str = str.replace(/\+/g, '\\+');
+    str = str.replace(/\s/g, '\\s');
+
+    return str;
+  };
+
+  InputMask.prototype.mask = function (e) {
+    var _this = e.target,
+        matrix = this.layout,
+        i = 0,
+        def = matrix.replace(/\D/g, ""),
+        val = _this.value.replace(/\D/g, "");
+
+    if (def.length >= val.length) val = def;
+
+    _this.value = matrix.replace(/./g, function(a) {
+      return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? '' : a
+    });
+
+    if (e.type == 'blur') {
+      var regexp = new RegExp(this.maskreg);
+      if (!regexp.test(_this.value)) _this.value = '';
+    } else {
+      this.setCursorPosition(_this.value.length, _this);
+    }
+  };
+
+  InputMask.prototype.setCursorPosition = function (pos, elem) {
+    elem.focus();
+    if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
+    else if (elem.createTextRange) {
+      var range = elem.createTextRange();
+      range.collapse(true);
+      range.moveEnd("character", pos);
+      range.moveStart("character", pos);
+      range.select();
+    }
+  };
+
+  InputMask.prototype.setListeners = function () {
+    this.el.addEventListener("input", this.mask.bind(this), false);
+    this.el.addEventListener("focus", this.mask.bind(this), false);
+    this.el.addEventListener("blur", this.mask.bind(this), false);
+  }
+
+  InputMask.prototype.getElement = function (selector) {
+    if (selector === undefined) return false;
+    if (this.isElement(selector)) return selector;
+    if (typeof selector === 'string') {
+      var el = document.querySelector(selector);
+      if (this.isElement(el)) return el;
+    }
+    return false;
+  };
+
+  InputMask.prototype.isElement = function (element) {
+    return element instanceof Element || element instanceof HTMLDocument;
+  };
 })();

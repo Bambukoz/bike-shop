@@ -1,5 +1,5 @@
 .about-us {
-  padding: 151px 137px 151px;
+  padding: 151px 137px 107px;
 
   @include tablet {
     padding: 34px 115px 25px;
@@ -26,10 +26,7 @@
   @include list-reset;
   width: 100%;
   display: flex;
-
-  @include tablet {
-    flex-wrap: wrap;
-  }
+  flex-wrap: wrap;
 
   @include mobile {
     flex-direction: column;
@@ -38,22 +35,28 @@
 
 .about-us__item {
   @include style-reset;
-  width: 23%;
+  width: 22%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 3.3%;
+  margin-right: 3.9%;
+  margin-bottom: 44px;
 
   @include tablet {
     width: 45.2%;
     margin-right: 9.3%;
-    margin-bottom: 44px;
   }
 
   @include mobile {
     width: 100%;
     margin-right: 0;
     margin-bottom: 40px;
+  }
+
+  &:nth-child(4n) {
+    @include desktop{
+      margin-right: 0;
+    }
   }
 
   &:last-child {

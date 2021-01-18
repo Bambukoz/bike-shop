@@ -17,6 +17,7 @@
   @include tablet {
     display: none;
     position: relative;
+    flex-direction: column;
     min-height: auto;
     padding-top: 0;
     background-image: none;
@@ -31,8 +32,10 @@
 
   &--open {
     @include tablet;
-    display: flex;
     position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
     z-index: 2;
   }
 }
@@ -50,7 +53,6 @@
 
 .header__wrapper {
   width: 60.7%;
-  //width: 873px;
   display: flex;
   border-bottom: 1px solid $color-white-02;
   padding-left: 19px;

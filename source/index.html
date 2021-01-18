@@ -17,7 +17,7 @@
   <link rel="preload" href="fonts/OpenSans-Bold.woff" as="font">
 </head>
 
-<body class="page">
+<body class="page js-page">
 <header class="page__header header header--nojs js-header">
   <div class="header__wrapper">
     <nav class="nav">
@@ -54,13 +54,13 @@
       <h1>Мы&nbsp;продаем велосипеды</h1>
       <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
     </section>
-    <form class="form" action="https://echo.htmlacademy.ru" method="get">
+    <form class="form" action="https://echo.htmlacademy.ru" method="POST">
       <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
       <label class="form__label" for="name" aria-label="Введите ваше имя">
         <input type="text" id="name" name="name" placeholder="Введите Ваше Имя" required>
       </label>
       <label class="form__label form__label--bottom" for="tel" aria-label="Введите ваш номер телефона">
-        <input type="tel" id="tel" name="tel" placeholder="Введите Ваш номер телефона" pattern="[0-9]{11}" minlength="11" required>
+        <input type="tel" id="tel" name="tel" placeholder="Введите Ваш номер телефона" minlength="18" maxlength="18" data-mask="+7 (___) ___-__-__" required>
       </label>
       <button class="btn btn__submit" type="submit">Подобрать велосипед мечты</button>
     </form>

@@ -45,6 +45,11 @@
   }
 }
 
+.header--open + main,
+.header--open + footer {
+  display: none;
+}
+
 .header--nojs .btn__menu--close,
 .header--nojs + .main .btn__menu--open {
   @include tablet {

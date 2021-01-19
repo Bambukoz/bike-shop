@@ -18,6 +18,7 @@
     display: none;
     position: relative;
     flex-direction: column;
+    background-color: transparent;
     min-height: auto;
     padding-top: 0;
     background-image: none;
@@ -40,6 +41,11 @@
   }
 }
 
+.header--open + main,
+.header--open + footer {
+  display: none;
+}
+
 .header--nojs .btn__menu--close,
 .header--nojs + .main .btn__menu--open {
   @include tablet {
@@ -55,8 +61,6 @@
   width: 60.7%;
   display: flex;
   border-bottom: 1px solid $color-white-02;
-  padding-left: 19px;
-  padding-right: 22px;
   padding-bottom: 9px;
 
   @include tablet {

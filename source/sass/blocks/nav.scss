@@ -19,6 +19,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 
   @include tablet {
     flex-direction: column;
@@ -27,15 +28,10 @@
 
 .nav__item {
   @include style-reset;
-  margin-right: 134px;
 
   @include tablet {
     position: relative;
     margin-bottom: 30px;
-    margin-right: 0;
-  }
-
-  &:last-child {
     margin-right: 0;
   }
 
@@ -62,6 +58,7 @@
   line-height: 200%;
   text-align: center;
   letter-spacing: -0.005em;
+  padding: 9px 20px;
 
   @include tablet {
     display: block;

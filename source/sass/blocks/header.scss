@@ -18,6 +18,7 @@
     display: none;
     position: relative;
     flex-direction: column;
+    justify-content: flex-start;
     background-color: transparent;
     min-height: auto;
     padding-top: 0;
@@ -34,16 +35,14 @@
   &--open {
     @include tablet;
     position: absolute;
-    display: flex;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: $color-white;
     z-index: 2;
   }
-}
-
-.header--open + main,
-.header--open + footer {
-  display: none;
 }
 
 .header--nojs .btn__menu--close,
